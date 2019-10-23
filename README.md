@@ -51,3 +51,7 @@ Install these packages to fix error when build release with firebase (restart th
 
 `npm --add-python-to-path='true' --debug install --global windows-build-tools`
 `npm install grpc --build-from-source`
+
+## References
+
+Special thanks to [@duytq94](https://medium.com/@duytq94) for his walkthrough in how to get it running.
