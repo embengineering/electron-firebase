@@ -37,32 +37,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn start-electron`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Runs the app in the development mode and open it inside a new electron window.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn build-electron`
 
-### Code Splitting
+Builds the app for production to the `build` folder and creates a `dist` folder with the installation package. By default it builds for current platform and current arch. Use CLI flags `--mac`, `--win`, `--linux` to specify platforms. And `--ia32`, `--x64` to specify arch.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Only on windows
 
-### Analyzing the Bundle Size
+Install these packages to fix error when build release with firebase (restart the computer to take an effect).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+`npm --add-python-to-path='true' --debug install --global windows-build-tools`
+`npm install grpc --build-from-source`
